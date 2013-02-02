@@ -1,0 +1,8 @@
+{
+    "name": "tomphp/basicsocket",
+    "autoload": {
+        "psr-0": {
+            "BasicSocket\\": "src/"
+        }
+    }
+}
