@@ -1,0 +1,15 @@
+language: php
+
+php:
+  - 5.3
+  - 5.4
+
+before_script:
+  - pear install PHP_CodeSniffer
+  - pear channel-discover pear.phpmd.org
+  - pear channel-discover pear.pdepend.org
+  - pear install --alldeps phpmd/PHP_PMD
+
+script:
+  - phpcs --standard=psr2 src
+  - phpmd src xml codesize
