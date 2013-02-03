@@ -6,9 +6,7 @@ php:
 
 before_script:
   - composer install --dev
-  - pear install PHP_CodeSniffer
-  - phpenv rehash
 
 script:
-  - phpcs --standard=psr2 src
+  - vendor/bin/phpcs --standard=psr2 src
   - vendor/bin/phpmd src text codesize
