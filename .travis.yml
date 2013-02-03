@@ -11,4 +11,4 @@ before_script:
 
 script:
   - phpcs --standard=psr2 src
-  - vendor/bin/phpmd src xml codesize
+  - vendor/bin/phpmd src text codesize

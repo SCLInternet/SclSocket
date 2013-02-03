@@ -100,7 +100,9 @@ class Socket implements SocketInterface
             $this->connectionTimeout
         );
 
-        if (!$this->socket) return false;
+        if (!$this->socket) {
+            return false;
+        }
 
         socket_set_blocking($this->socket, $this->blocking);
         stream_set_timeout($this->socket, $this->readTimeout);
@@ -137,7 +139,9 @@ class Socket implements SocketInterface
      */
     public function disconnect()
     {
-        if (null === $this->socket) return;
+        if (null === $this->socket) {
+            return;
+        }
 
         fclose($this->socket);
         $this->socket = null;
