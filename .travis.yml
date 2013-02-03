@@ -5,11 +5,10 @@ php:
   - 5.4
 
 before_script:
+  - composer install --dev
   - pear install PHP_CodeSniffer
-  - pear channel-discover pear.phpmd.org
-  - pear channel-discover pear.pdepend.org
-  - pear install --alldeps phpmd/PHP_PMD
+  - phpenv rehash
 
 script:
   - phpcs --standard=psr2 src
-  - phpmd src xml codesize
+  - vendor/bin/phpmd src xml codesize

@@ -18,5 +18,8 @@
         "psr-0": {
             "BasicSocket\\": "src/"
         }
+    },
+    "require-dev": {
+        "phpmd/phpmd" : "1.4.0"
     }
 }
