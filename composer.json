@@ -2,7 +2,7 @@
     "name": "tomphp/basicsocket",
     "description": "Basic socket wrapper class to enable the writing of more testable socket code",
     "type": "library",
-    "license": "GPL-3.0",
+    "license": "MIT",
     "homepage": "https://github.com/tomphp/BasicSocket",
     "authors": [
         {
