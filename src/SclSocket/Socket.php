@@ -1,11 +1,11 @@
 <?php
 /**
- * BasicSocket Module (https://github.com/tomphp/BasicSocket)
+ * SclSocket Module (https://github.com/SCLInternet/SclSocket)
  *
- * @link https://github.com/tomphp/BasicSocket for the canonical source repository
+ * @link https://github.com/SCLInternet/SclSocket for the canonical source repository
  * @license http://opensource.org/licenses/MIT The MIT License (MIT)
  */
-namespace BasicSocket;
+namespace SclSocket;
 
 /**
  * The socket class which provides read and write access to a socket.

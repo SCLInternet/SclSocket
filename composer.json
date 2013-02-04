@@ -1,9 +1,9 @@
 {
-    "name": "tomphp/basicsocket",
+    "name": "sclinternet/scl-socket",
     "description": "Basic socket wrapper class to enable the writing of more testable socket code",
     "type": "library",
     "license": "MIT",
-    "homepage": "https://github.com/tomphp/BasicSocket",
+    "homepage": "https://github.com/SCLInternet/SCLSocket",
     "authors": [
         {
             "name": "Tom Oram",
@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-0": {
-            "BasicSocket\\": "src/"
+            "SclSocket\\": "src/"
         }
     },
     "require-dev": {
