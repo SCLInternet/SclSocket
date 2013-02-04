@@ -64,8 +64,7 @@ interface SocketInterface
     /**
      * Read data from the socket.
      *
-     * @param string $data
-     * @param int    $length
+     * @param int $length
      *
      * @return string|false
      */
