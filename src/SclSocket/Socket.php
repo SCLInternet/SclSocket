@@ -58,6 +58,10 @@ class Socket implements SocketInterface
 
     /**
      * {@inheritDoc}
+     *
+     * @param int $seconds
+     *
+     * @return SocketInterface
      */
     public function setConnectTimeout($seconds)
     {
@@ -67,6 +71,10 @@ class Socket implements SocketInterface
 
     /**
      * {@inheritDoc}
+     *
+     * @param int $seconds
+     *
+     * @return SocketInterface
      */
     public function setReadTimeout($seconds)
     {
@@ -76,6 +84,10 @@ class Socket implements SocketInterface
 
     /**
      * {@inheritDoc}
+     *
+     * @param boolean $blocking
+     *
+     * @return SocketInterface
      */
     public function setBlocking($blocking = true)
     {
@@ -84,6 +96,12 @@ class Socket implements SocketInterface
 
     /**
      * {@inheritDoc}
+     *
+     * @param string  $host
+     * @param string  $port
+     * @param boolean $secure
+     *
+     * @return boolean
      */
     public function connect($host, $port, $secure = false)
     {
@@ -112,6 +130,10 @@ class Socket implements SocketInterface
 
     /**
      * {@inheritDoc}
+     *
+     * @param string $data
+     *
+     * @return int|false Number of bytes written or false.
      */
     public function write($data)
     {
@@ -120,6 +142,10 @@ class Socket implements SocketInterface
 
     /**
      * {@inheritDoc}
+     *
+     * @param int $length
+     *
+     * @return string|false
      */
     public function read($length = 1024)
     {
@@ -128,6 +154,8 @@ class Socket implements SocketInterface
 
     /**
      * {@inheritDoc}
+     *
+     * @return boolean
      */
     public function closed()
     {
@@ -136,6 +164,8 @@ class Socket implements SocketInterface
 
     /**
      * {@inheritDoc}
+     *
+     * @return void
      */
     public function disconnect()
     {
@@ -149,6 +179,8 @@ class Socket implements SocketInterface
 
     /**
      * {@inheritDoc}
+     *
+     * @return int
      */
     public function connectionErrorNo()
     {
@@ -157,6 +189,8 @@ class Socket implements SocketInterface
 
     /**
      * {@inheritDoc}
+     *
+     * @return string
      */
     public function connectionError()
     {
