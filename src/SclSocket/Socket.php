@@ -159,7 +159,7 @@ class Socket implements SocketInterface
      */
     public function closed()
     {
-        return feof($this->socket);
+        return !$this->socket || feof($this->socket);
     }
 
     /**
